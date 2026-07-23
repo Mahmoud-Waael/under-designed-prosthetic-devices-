@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myoelectric Device - ProTech Prosthetics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ProTech</h1>
+                <span>Prosthetics</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#appointment">Request Appointment</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-header">
+                <div class="product-detail-image">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="500" height="400" fill="#f0f7fa"/>
+                        <rect x="100" y="100" width="300" height="160" rx="15" fill="#2c5f7c"/>
+                        <rect x="120" y="120" width="120" height="50" rx="8" fill="#4a90a4"/>
+                        <rect x="260" y="120" width="120" height="50" rx="8" fill="#4a90a4"/>
+                        <rect x="120" y="185" width="260" height="45" rx="8" fill="#4a90a4"/>
+                        <circle cx="350" cy="145" r="18" fill="#7fb3c3"/>
+                        <rect x="130" y="240" width="240" height="30" rx="8" fill="#4a90a4"/>
+                        <circle cx="250" cy="255" r="10" fill="#7fb3c3"/>
+                    </svg>
+                </div>
+                <div class="product-detail-info">
+                    <h1>Myoelectric Device</h1>
+                    <p class="price">$32,000</p>
+                    <p class="description">Our advanced myoelectric device uses cutting-edge muscle-sensing technology to provide intuitive control of prosthetic limbs. By detecting electrical signals from remaining muscles, it enables natural, thought-controlled movement.</p>
+                    
+                    <ul class="features-list">
+                        <li>High-precision EMG sensors</li>
+                        <li>Pattern recognition for multiple movements</li>
+                        <li>Self-learning algorithm adaptation</li>
+                        <li>Wireless muscle signal transmission</li>
+                        <li>Low-latency response system</li>
+                        <li>Compatible with various prosthetic types</li>
+                        <li>Easy calibration process</li>
+                        <li>Mobile app for monitoring and adjustment</li>
+                    </ul>
+                    
+                    <a href="index.html" class="back-button">← Back to Products</a>
+                </div>
+            </div>
+
+            <div class="specifications">
+                <h3>Technical Specifications</h3>
+                <table class="spec-table">
+                    <tr>
+                        <td>Weight</td>
+                        <td>0.35 kg (0.8 lbs)</td>
+                    </tr>
+                    <tr>
+                        <td>Signal Channels</td>
+                        <td>8-16 EMG channels</td>
+                    </tr>
+                    <tr>
+                        <td>Sampling Rate</td>
+                        <td>1000 Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Response Time</td>
+                        <td>&lt;50 milliseconds</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>5-7 days</td>
+                    </tr>
+                    <tr>
+                        <td>Charging Time</td>
+                        <td>1.5 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td>Medical-grade silicone, titanium</td>
+                    </tr>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>2 years comprehensive</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="product-appointment">
+                <h3>Interested in This Product?</h3>
+                <p>Schedule a free consultation to see if the Myoelectric Device is right for you.</p>
+                <a href="index.html#appointment" class="appointment-cta-button">Request Appointment →</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProTech Prosthetics — Footer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0e1115;
+  --panel:#161b22;
+  --panel-2:#1c222b;
+  --line:rgba(255,255,255,0.08);
+  --line-strong:rgba(255,255,255,0.14);
+  --accent:#00e5c7;
+  --accent-dim:rgba(0,229,199,0.14);
+  --accent-glow:rgba(0,229,199,0.35);
+  --amber:#ffb020;
+  --text:#eef2f4;
+  --muted:#8b96a3;
+  --muted-2:#5c6672;
+  --display:'Space Grotesk',sans-serif;
+  --body:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--body);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button,input{font-family:inherit;color:inherit;}
+
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 32px;}
+
+footer{background:var(--panel);border-top:1px solid var(--line);padding:80px 0 0;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:56px;}
+.footer-col h3{font-family:var(--display);font-size:16px;font-weight:600;margin-bottom:16px;}
+.footer-col p{color:var(--muted);font-size:14px;margin-bottom:8px;}
+.social-links{display:flex;gap:12px;margin-top:18px;}
+.social-links a{
+  width:36px;height:36px;border:1px solid var(--line);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease);
+  color:var(--muted);
+}
+.social-links a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px);}
+.social-links svg{width:16px;height:16px;}
+.footer-col ul li{margin-bottom:10px;}
+.footer-col ul a{color:var(--muted);font-size:14px;transition:color .3s var(--ease);}
+.footer-col ul a:hover{color:var(--accent);}
+.newsletter-form{display:flex;gap:0;margin-top:12px;}
+.newsletter-form input{
+  flex:1;background:var(--panel-2);border:1px solid var(--line);border-right:none;
+  padding:11px 12px;font-size:13px;color:var(--text);border-radius:2px 0 0 2px;
+}
+.newsletter-form input:focus{outline:none;border-color:var(--accent);}
+.newsletter-form button{
+  background:var(--accent);color:#04120f;border:none;padding:0 16px;border-radius:0 2px 2px 0;
+  cursor:pointer;font-weight:600;
+}
+.footer-bottom{
+  border-top:1px solid var(--line);padding:24px 0;text-align:center;
+  font-size:13px;color:var(--muted-2);font-family:var(--mono);
+}
+
+@media (max-width:900px){
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  .container{padding:0 20px;}
+  .footer-grid{grid-template-columns:1fr;gap:32px;}
+}
+</style>
+</head>
+<body>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>ProTech Prosthetics</h3>
+        <p>Transforming lives through innovative bionic technology since 2004.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#appointment">Request Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <p>123 Innovation Drive</p>
+        <p>Tech City, TC 12345</p>
+        <p>(555) 123-4567</p>
+        <p>info@protechprosthetics.com</p>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe for updates and news</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email">
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 ProTech Prosthetics. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.querySelector('.newsletter-form');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var input = form.querySelector('input');
+      if(input && input.value){
+        input.placeholder = 'Subscribed!';
+        input.value = '';
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
