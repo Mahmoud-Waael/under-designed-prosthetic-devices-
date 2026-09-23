@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Products — Elna3om Prosthetics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0e1115;
+  --panel:#161b22;
+  --accent:#00a68f;
+  --text:#eef2f4;
+  --muted:#8b96a3;
+  --display:'Space Grotesk',sans-serif;
+  --body:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:#ffffff;color:#12161b;font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 32px;}
+
+header{background:var(--bg);padding:22px 0;}
+header .container{display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:baseline;gap:8px;color:var(--text);}
+.logo h1{font-family:var(--display);font-size:20px;font-weight:700;}
+.logo span{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;}
+.back-home{font-family:var(--mono);font-size:13px;color:var(--text);border:1px solid rgba(255,255,255,.15);padding:9px 18px;border-radius:2px;transition:border-color .3s var(--ease), color .3s var(--ease);}
+.back-home:hover{border-color:var(--accent);color:var(--accent);}
+
+.catalog-hero{padding:64px 0 40px;text-align:center;}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;}
+.eyebrow::before{content:'';width:20px;height:1px;background:var(--accent);}
+.catalog-hero h2{font-family:var(--display);font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-.01em;margin-bottom:14px;}
+.catalog-hero p{color:#6b7480;font-size:16px;max-width:560px;margin:0 auto;}
+
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;padding:20px 0 100px;}
+.product-card-inner{background:#f7f8fa;border:1px solid #e5e8ec;border-radius:4px;overflow:hidden;height:100%;display:flex;flex-direction:column;cursor:pointer;transition:border-color .3s var(--ease), box-shadow .3s var(--ease), transform .2s var(--ease);}
+.product-card-inner:hover{border-color:#d3d8de;box-shadow:0 20px 40px -22px rgba(20,25,32,.18);transform:translateY(-3px);}
+.product-media{background:#ffffff;padding:26px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid #edf0f3;}
+.product-media svg{width:100%;height:100%;}
+.product-media::after{content:'';position:absolute;inset:0;background-image:linear-gradient(#eef1f4 1px, transparent 1px),linear-gradient(90deg, #eef1f4 1px, transparent 1px);background-size:18px 18px;opacity:.6;}
+.product-body{padding:18px 20px 22px;flex:1;display:flex;flex-direction:column;}
+.product-tag{font-family:var(--mono);font-size:10.5px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;}
+.product-body h3{font-family:var(--display);font-size:16px;font-weight:600;margin-bottom:6px;}
+.product-body .price{font-family:var(--mono);font-size:13px;color:#6b7480;margin-bottom:14px;}
+.learn-more{margin-top:auto;font-family:var(--mono);font-size:11.5px;font-weight:500;color:#12161b;display:inline-flex;align-items:center;gap:6px;letter-spacing:.04em;}
+.learn-more svg{width:12px;height:12px;transition:transform .3s var(--ease);}
+.product-card-inner:hover .learn-more svg{transform:translateX(4px);}
+
+footer{background:var(--bg);color:var(--muted);text-align:center;padding:28px 0;font-size:13px;font-family:var(--mono);}
+
+@media (max-width:1024px){.products-grid{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:768px){.products-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:480px){.products-grid{grid-template-columns:1fr;} .container{padding:0 20px;}}
+</style>
+  <link rel="stylesheet" href="light-theme.css">
+  <link rel="stylesheet" href="dark-theme.css">
+  <link rel="stylesheet" href="theme-toggle.css">
+  <script src="theme-init.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span></span>
+      <h1>Elna3om</h1>
+      <span>Prosthetics</span>
+    </a>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </div>
+</header>
+
+<section class="catalog-hero">
+  <div class="container">
+    <div class="eyebrow">Full Catalog</div>
+    <h2>All Prosthetic Devices</h2>
+    <p>Browse our complete range of bionic, myoelectric, and passive prosthetic solutions — 20 devices engineered for comfort, control, and natural movement.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="products-grid">
+
+    <a class="product-card-inner" href="bionic-arm.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="70" y="20" width="60" height="90" rx="8" stroke="#00a68f" stroke-width="1.5"/><line x1="70" y1="45" x2="130" y2="45" stroke="#9aa2ab" stroke-width="1"/><line x1="70" y1="70" x2="130" y2="70" stroke="#9aa2ab" stroke-width="1"/><line x1="70" y1="95" x2="130" y2="95" stroke="#9aa2ab" stroke-width="1"/><circle cx="100" cy="130" r="14" fill="none" stroke="#00a68f" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model A-07</div><h3>Bionic Arm</h3><p class="price">$45,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="prosthetic-leg.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="85" y="10" width="30" height="90" rx="6" stroke="#00a68f" stroke-width="1.5"/><circle cx="100" cy="115" r="12" fill="none" stroke="#9aa2ab" stroke-width="1.5"/><rect x="90" y="127" width="20" height="30" rx="4" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model L-12</div><h3>Prosthetic Leg</h3><p class="price">Contact for pricing</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="robotic-hand.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="75" y="60" width="50" height="45" rx="6" stroke="#00a68f" stroke-width="1.5"/><line x1="80" y1="30" x2="80" y2="60" stroke="#9aa2ab" stroke-width="4" stroke-linecap="round"/><line x1="92" y1="20" x2="92" y2="60" stroke="#9aa2ab" stroke-width="4" stroke-linecap="round"/><line x1="104" y1="24" x2="104" y2="60" stroke="#9aa2ab" stroke-width="4" stroke-linecap="round"/><line x1="116" y1="34" x2="116" y2="60" stroke="#9aa2ab" stroke-width="4" stroke-linecap="round"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model H-04</div><h3>Robotic Hand</h3><p class="price">Contact for pricing</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="advanced-knee.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="80" y="20" width="40" height="45" rx="6" stroke="#9aa2ab" stroke-width="1.5"/><circle cx="100" cy="85" r="20" fill="none" stroke="#00a68f" stroke-width="1.5"/><circle cx="100" cy="85" r="4" fill="#00a68f"/><rect x="85" y="105" width="30" height="40" rx="6" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model K-09</div><h3>Advanced Knee Joint</h3><p class="price">Contact for pricing</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="myoelectric-device.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="55" y="55" width="90" height="55" rx="8" stroke="#00a68f" stroke-width="1.5"/><rect x="65" y="65" width="30" height="18" rx="3" fill="none" stroke="#9aa2ab"/><rect x="105" y="65" width="30" height="18" rx="3" fill="none" stroke="#9aa2ab"/><circle cx="130" cy="60" r="4" fill="#00a68f"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model M-03</div><h3>Myoelectric Device</h3><p class="price">Contact for pricing</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="sports-prosthetic.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><path d="M70 130 L100 30 L130 130" stroke="#ffb020" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="100" cy="20" r="10" fill="none" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model S-21</div><h3>Sports Prosthetic</h3><p class="price">Contact for pricing</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="bionic-foot.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="88" y="24" width="24" height="72" rx="6" stroke="#00a68f" stroke-width="1.5"/><ellipse cx="100" cy="104" rx="12" ry="8" stroke="#9aa2ab" stroke-width="1.5"/><path d="M72 120 Q100 112 136 120 L136 132 Q100 144 72 132 Z" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model F-08</div><h3>Bionic Foot</h3><p class="price">$28,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="prosthetic-hip.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><circle cx="100" cy="60" r="18" fill="none" stroke="#00a68f" stroke-width="2"/><circle cx="100" cy="60" r="6" fill="#00a68f"/><rect x="94" y="78" width="12" height="56" rx="4" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model H-15</div><h3>Prosthetic Hip Joint</h3><p class="price">$52,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="cosmetic-hand.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="82" y="70" width="36" height="48" rx="10" stroke="#00a68f" stroke-width="1.5"/><rect x="78" y="40" width="8" height="34" rx="4" stroke="#9aa2ab" stroke-width="1.2"/><rect x="92" y="34" width="8" height="40" rx="4" stroke="#9aa2ab" stroke-width="1.2"/><rect x="106" y="34" width="8" height="40" rx="4" stroke="#9aa2ab" stroke-width="1.2"/><rect x="120" y="40" width="8" height="34" rx="4" stroke="#9aa2ab" stroke-width="1.2"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model C-02</div><h3>Cosmetic Silicone Hand</h3><p class="price">$9,500</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="pediatric-arm.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="72" y="40" width="56" height="72" rx="12" stroke="#00a68f" stroke-width="1.5"/><circle cx="100" cy="92" r="8" fill="#ffb020"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model P-06</div><h3>Pediatric Prosthetic Arm</h3><p class="price">$18,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="waterproof-leg.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="90" y="20" width="20" height="60" rx="4" stroke="#00a68f" stroke-width="1.5"/><circle cx="100" cy="92" r="9" fill="none" stroke="#9aa2ab" stroke-width="1.5"/><rect x="94" y="102" width="12" height="24" rx="3" stroke="#9aa2ab" stroke-width="1.5"/><path d="M80 20 Q100 8 120 20" stroke="#00a68f" stroke-width="1.5" fill="none"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model W-11</div><h3>Waterproof Prosthetic Leg</h3><p class="price">$34,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="smart-wrist.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="86" y="24" width="16" height="48" rx="4" stroke="#9aa2ab" stroke-width="1.5"/><circle cx="100" cy="88" r="12" fill="none" stroke="#00a68f" stroke-width="2"/><rect x="92" y="102" width="16" height="36" rx="4" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model SW-05</div><h3>Smart Prosthetic Wrist</h3><p class="price">$21,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="running-blade.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><path d="M88 24 L112 24 L124 128 L84 128 Z" fill="#ffb020" opacity="0.75"/><path d="M64 128 Q100 118 136 128 L136 138 Q100 148 64 138 Z" stroke="#9aa2ab" stroke-width="1.2"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model R-19</div><h3>Running Blade</h3><p class="price">$16,500</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="shoulder-joint.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><circle cx="100" cy="50" r="16" fill="none" stroke="#00a68f" stroke-width="2"/><circle cx="100" cy="50" r="5" fill="#00a68f"/><rect x="94" y="66" width="12" height="60" rx="4" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model SJ-10</div><h3>Prosthetic Shoulder Joint</h3><p class="price">$46,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="ankle-joint.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="92" y="30" width="16" height="56" rx="4" stroke="#9aa2ab" stroke-width="1.5"/><circle cx="100" cy="96" r="10" fill="none" stroke="#00a68f" stroke-width="2"/><path d="M76 112 Q100 104 124 112 L124 122 Q100 132 76 122 Z" stroke="#9aa2ab" stroke-width="1.2"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model AJ-14</div><h3>Adaptive Ankle Joint</h3><p class="price">$19,800</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="finger-prosthetic.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="84" y="68" width="32" height="36" rx="6" stroke="#9aa2ab" stroke-width="1.5"/><rect x="86" y="44" width="6" height="26" rx="3" fill="#00a68f"/><rect x="96" y="40" width="6" height="30" rx="3" fill="#00a68f"/><rect x="106" y="44" width="6" height="26" rx="3" fill="#9aa2ab"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model PH-03</div><h3>Partial Hand Prosthetic</h3><p class="price">$12,400</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="below-knee-leg.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="90" y="24" width="20" height="52" rx="5" stroke="#00a68f" stroke-width="1.5"/><path d="M78 84 Q100 76 122 84 L122 94 Q100 104 78 94 Z" stroke="#9aa2ab" stroke-width="1.2"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model BK-17</div><h3>Below-Knee Prosthetic Leg</h3><p class="price">$23,500</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="above-knee-leg.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="88" y="16" width="24" height="48" rx="6" stroke="#9aa2ab" stroke-width="1.5"/><circle cx="100" cy="80" r="11" fill="none" stroke="#00a68f" stroke-width="2"/><rect x="92" y="92" width="16" height="44" rx="4" stroke="#9aa2ab" stroke-width="1.5"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model AK-22</div><h3>Above-Knee Prosthetic Leg</h3><p class="price">$31,000</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="swim-prosthetic.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="90" y="28" width="20" height="56" rx="5" stroke="#9aa2ab" stroke-width="1.5"/><path d="M72 88 Q100 80 128 88 L128 100 Q100 112 72 100 Z" fill="#00a68f" opacity="0.4"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model SP-08</div><h3>Swim Prosthetic Leg</h3><p class="price">$14,200</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+    <a class="product-card-inner" href="pediatric-leg.html">
+      <div class="product-media"><svg viewBox="0 0 200 160" fill="none"><rect x="92" y="36" width="16" height="48" rx="6" fill="none" stroke="#00a68f" stroke-width="1.5"/><path d="M82 88 Q100 80 118 88 L118 96 Q100 104 82 96 Z" fill="#ffb020" opacity="0.7"/></svg></div>
+      <div class="product-body"><div class="product-tag">Model PL-04</div><h3>Pediatric Prosthetic Leg</h3><p class="price">$15,800</p><span class="learn-more">View Details<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </a>
+
+  </div>
+</div>
+
+<footer>© 2026 Elna3om Prosthetics. All rights reserved.</footer>
+
+  <script src="language.js"></script>
+</body>
+</html>

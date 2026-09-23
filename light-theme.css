@@ -1,0 +1,179 @@
+:root {
+  --white: #ffffff;
+  --light-bg: #ffffff;
+  --primary-color: #12161b;
+  --secondary-color: #008f7b;
+  --text-dark: #12161b;
+  --text-light: #59636f;
+  --text-primary: #12161b;
+  --text-muted: #59636f;
+  --text: #12161b;
+  --border-color: #e1e5ea;
+  --carbon-panel: #ffffff;
+  --carbon-light: #ffffff;
+  --panel: #ffffff;
+  --panel-2: #ffffff;
+  --line: rgba(18, 22, 27, 0.12);
+  --line-strong: rgba(18, 22, 27, 0.2);
+  --muted: #59636f;
+  --muted-2: #707983;
+}
+
+html,
+body {
+  background: #ffffff !important;
+  color: #12161b !important;
+}
+
+header,
+header.scrolled,
+#siteHeader,
+.navbar,
+.nav-links,
+.hero,
+.products,
+.products-section,
+.about,
+.about-section,
+.appointment,
+.appointment-section,
+.contact,
+.product-detail,
+.specifications,
+.product-card,
+.product-card-inner,
+.product-image,
+.product-media,
+.stat,
+.panel-card,
+.appointment-form,
+.contact-form input,
+.contact-form textarea,
+.field input,
+.field select,
+.field textarea,
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea,
+.newsletter-form input,
+footer {
+  background-color: #ffffff !important;
+}
+
+/* The former product callout used a colored panel; page surfaces are white now. */
+.product-appointment {
+  background: #ffffff !important;
+  color: #12161b !important;
+  border: 1px solid #e1e5ea;
+}
+
+.about .stat {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.about .stat-bar {
+  background: #e8ebef !important;
+}
+
+.about .stat h3 { color: #12161b !important; }
+.about .stat p { color: #59636f !important; }
+
+header,
+header.scrolled,
+#siteHeader,
+.navbar,
+footer,
+.about,
+.panel-card,
+.stat,
+.product-card,
+.product-card-inner,
+.specifications,
+.appointment-form,
+.appointment-info .contact-details {
+  border-color: #e1e5ea !important;
+}
+
+/* Keep the appointment and contact form cards clean in light mode. */
+#appointment .panel-card,
+#contact .panel-card {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+th,
+label,
+.nav-links a:not(.cta-nav),
+.logo span,
+.logo h1,
+.section-subtitle,
+.product-detail-info,
+.specifications,
+.product-body,
+.footer-col,
+.footer-section,
+.footer-bottom,
+.back-home,
+.learn-more,
+.info-block p,
+.info-block strong,
+.field label,
+.appointment-benefits li,
+.appointment-info .contact-details p {
+  color: #12161b !important;
+}
+
+.nav-links a:not(.cta-nav):hover,
+.footer-col ul a:hover,
+.footer-section ul li a:hover,
+.learn-more:hover {
+  color: #008f7b !important;
+}
+
+.back-button {
+  color: #ffffff !important;
+}
+
+.cta-nav,
+.appointment-form button,
+.contact-form button,
+.cta-button {
+  color: #0e1115;
+}
+
+.btn-primary,
+.newsletter-form button {
+  color: #04120f;
+}
+
+.appointment-cta-button {
+  background: #0e1115 !important;
+  color: #00e5c7 !important;
+}
+
+.back-button {
+  background: var(--primary-color) !important;
+}
+
+input,
+select,
+textarea {
+  color: #12161b;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #707983;
+}

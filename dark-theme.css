@@ -1,0 +1,190 @@
+html.dark-theme {
+  --white: #0e1115;
+  --light-bg: #161b22;
+  --primary-color: #eef2f4;
+  --secondary-color: #00e5c7;
+  --text-dark: #eef2f4;
+  --text-light: #a4adb7;
+  --text-primary: #eef2f4;
+  --text-muted: #a4adb7;
+  --text: #eef2f4;
+  --border-color: #2b323b;
+  --carbon-panel: #161b22;
+  --carbon-light: #1c222b;
+  --panel: #161b22;
+  --panel-2: #1c222b;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --muted: #a4adb7;
+  --muted-2: #8b96a3;
+}
+
+html.dark-theme,
+html.dark-theme body {
+  background: #0e1115 !important;
+  color: #eef2f4 !important;
+}
+
+html.dark-theme header,
+html.dark-theme header.scrolled,
+html.dark-theme #siteHeader,
+html.dark-theme .navbar {
+  background: rgba(14, 17, 21, 0.97) !important;
+  border-color: #2b323b !important;
+}
+
+html.dark-theme footer {
+  border-color: #2b323b !important;
+}
+
+html.dark-theme .nav-links {
+  background-color: #0e1115 !important;
+}
+
+html.dark-theme .hero,
+html.dark-theme .products,
+html.dark-theme .products-section,
+html.dark-theme .about,
+html.dark-theme .about-section,
+html.dark-theme .appointment,
+html.dark-theme .appointment-section,
+html.dark-theme .contact,
+html.dark-theme .product-detail,
+html.dark-theme footer {
+  background: #0e1115 !important;
+}
+
+html.dark-theme .specifications,
+html.dark-theme .product-card,
+html.dark-theme .product-card-inner,
+html.dark-theme .product-image,
+html.dark-theme .product-media,
+html.dark-theme .stat,
+html.dark-theme .panel-card,
+html.dark-theme .appointment-form,
+html.dark-theme .appointment-info .contact-details,
+html.dark-theme .contact-form input,
+html.dark-theme .contact-form textarea,
+html.dark-theme .field input,
+html.dark-theme .field select,
+html.dark-theme .field textarea,
+html.dark-theme .appointment-form input,
+html.dark-theme .appointment-form select,
+html.dark-theme .appointment-form textarea,
+html.dark-theme .newsletter-form input {
+  background-color: #161b22 !important;
+  border-color: #2b323b !important;
+}
+
+html.dark-theme #appointment .panel-card,
+html.dark-theme #contact .panel-card {
+  background-color: #0e1115 !important;
+}
+
+html.dark-theme .product-appointment {
+  background: #161b22 !important;
+  color: #eef2f4 !important;
+  border-color: #2b323b !important;
+}
+
+html.dark-theme .about {
+  border-top-color: #252c34 !important;
+  border-bottom-color: #252c34 !important;
+}
+
+html.dark-theme .about .stat {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html.dark-theme .about .stat h3 { color: #eef2f4 !important; }
+html.dark-theme .about .stat p { color: #a4adb7 !important; }
+html.dark-theme .about .stat-bar { background: #2b323b !important; }
+
+html.dark-theme .spec-table td,
+html.dark-theme .features-list li,
+html.dark-theme .product-card-inner,
+html.dark-theme .product-media {
+  border-color: #2b323b !important;
+}
+
+html.dark-theme .product-media::after {
+  background-image:
+    linear-gradient(#252c34 1px, transparent 1px),
+    linear-gradient(90deg, #252c34 1px, transparent 1px) !important;
+}
+
+html.dark-theme .products .btn-outline {
+  color: #eef2f4 !important;
+  border-color: #3a424c !important;
+}
+
+html.dark-theme .products .btn-outline:hover {
+  color: #00e5c7 !important;
+  border-color: #00e5c7 !important;
+}
+
+html.dark-theme .product-tag {
+  color: #00e5c7 !important;
+}
+
+html.dark-theme body,
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6,
+html.dark-theme p,
+html.dark-theme li,
+html.dark-theme td,
+html.dark-theme th,
+html.dark-theme label,
+html.dark-theme .nav-links a:not(.cta-nav),
+html.dark-theme .logo span,
+html.dark-theme .logo h1,
+html.dark-theme .section-subtitle,
+html.dark-theme .product-detail-info,
+html.dark-theme .specifications,
+html.dark-theme .product-body,
+html.dark-theme .footer-col,
+html.dark-theme .footer-section,
+html.dark-theme .footer-bottom,
+html.dark-theme .back-home,
+html.dark-theme .learn-more,
+html.dark-theme .info-block p,
+html.dark-theme .info-block strong,
+html.dark-theme .field label,
+html.dark-theme .appointment-benefits li,
+html.dark-theme .appointment-info .contact-details p {
+  color: #eef2f4 !important;
+}
+
+html.dark-theme .nav-links a:not(.cta-nav):hover,
+html.dark-theme .footer-col ul a:hover,
+html.dark-theme .footer-section ul li a:hover,
+html.dark-theme .learn-more:hover {
+  color: #00e5c7 !important;
+}
+
+html.dark-theme .back-button {
+  background: #12161b !important;
+  color: #ffffff !important;
+}
+
+html.dark-theme .appointment-cta-button {
+  background: #0e1115 !important;
+  color: #00e5c7 !important;
+}
+
+html.dark-theme input,
+html.dark-theme select,
+html.dark-theme textarea {
+  color: #eef2f4;
+}
+
+html.dark-theme input::placeholder,
+html.dark-theme textarea::placeholder {
+  color: #8b96a3;
+}
